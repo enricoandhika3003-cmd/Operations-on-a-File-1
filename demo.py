@@ -30,15 +30,13 @@ file2.close()
 file = open('Alphabet.file', 'r')
 file2 = open('Copy.file', 'w')
 
-cont = file.readline()
+cont = file.readlines()
 type(cont)
-for i in range (1, len(cont),+1):
+for i in range (1, len(cont)+1):
     if (i%2 != 0):
-        print(cont)
-        file2.write(cont)
+        file2.write(cont [i-1])
+    else:
         pass
-
+    
 file.close()
 file2.close()
-
-    
