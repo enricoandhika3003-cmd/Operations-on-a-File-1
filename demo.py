@@ -40,3 +40,7 @@ for i in range (1, len(cont)+1):
     
 file.close()
 file2.close()
+
+file = open('Copy.file', 'r')
+print(file.readlines())
+file.close()
